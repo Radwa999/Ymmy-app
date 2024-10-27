@@ -149,7 +149,6 @@ async function ingredients(){
 
     let response = await fetch(`https://www.themealdb.com/api/json/v1/1/list.php?i=list`)
 response = await response.json()
-console.log(response.meals);
 
 displayIngrediant(response.meals.splice(0,15));
 }
