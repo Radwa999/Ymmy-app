@@ -184,25 +184,6 @@ async function getCategoryFilter(category) {
     }
 
 
-// function displayMeals(arr) {
-
-//     let box = "";
-//     for (let i = 0; i < arr.length; i++) {
-//         box += `
-//         <div class="col-md-3">
-//             <div class="meal position-relative overflow-hidden rounded-2">
-//                 <img class="w-100" src="${arr[i].strMealThumb}" alt="" srcset="">
-//                 <div class="meal-layer position-absolute text-center text-black p-2">
-//                     <h3>${arr[i].strMeal}</h3>
-//                     <p>${arr[i].strArea}</p>
-//                 </div>
-//             </div>
-//         </div>
-//         `;
-//     }
-
-//     searchBox.innerHTML = box;
-// }
 
 
 
@@ -442,11 +423,5 @@ function validation() {
     }
 }
 
-    //alert validation//
-    // function alertValidation() {
-    //     if(!validateName() || !validateEmail() || !validatePhone() || !validateAge() || !validatePassword() || !validateRePassword()){
-    //         alert("Please Enter Valid Details")
-    //     }
-    // }
-    
+
 
