@@ -102,7 +102,7 @@ function displayCategory(arr){
                     <img class="w-100" src="${arr[i].strCategoryThumb}" alt="" srcset="">
                     <div class="meal-layer position-absolute text-center text-black p-2">
                         <h3>${arr[i].strCategory}</h3>
-                        <p>${arr[i].strCategoryDescription}</p>
+                        <p>${arr[i].strCategoryDescription.split(" ").slice(0,20).join(" ")}</p>
                     </div>
                 </div>
         </div>
@@ -151,7 +151,7 @@ async function ingredients(){
 response = await response.json()
 console.log(response.meals);
 
-displayIngrediant(response.meals);
+displayIngrediant(response.meals.splice(0,15));
 }
 
 
@@ -423,5 +423,4 @@ function validation() {
     }
 }
 
-
-
+ 
